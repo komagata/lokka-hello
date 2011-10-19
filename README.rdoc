@@ -1,6 +1,7 @@
 = lokka-hello
 
-Description goes here.
+Lokka sample plugin.
+This plugin display "hello" when you access to "/hello" on lokka.
 
 == Contributing to lokka-hello
  

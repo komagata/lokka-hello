@@ -12,7 +12,13 @@ require 'shoulda'
 
 $LOAD_PATH.unshift(File.join(File.dirname(__FILE__), '..', 'lib'))
 $LOAD_PATH.unshift(File.dirname(__FILE__))
-require 'lokka-hello'
+require 'rack/test'
+require 'lokka/app'
 
 class Test::Unit::TestCase
+  include Rack::Test::Methods
+
+  def app
+    Lokka::App
+  end
 end
